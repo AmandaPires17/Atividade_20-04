@@ -2,14 +2,19 @@
 import BlocoUm from "@/components/BlocoUm.vue";
 
 export default {
+  data() {
+    return {
+      nomes2: ["Mariana", "Ariane"],
+    };
+  },
   components: { BlocoUm },
 };
 </script>
 <template>
   <main id="content">
-    <BlocoUm id="bloco1" />
+    <BlocoUm id="bloco1" :nomes="['Amanda', 'Antonia']" />
 
-    <BlocoUm id="bloco2" />
+    <BlocoUm id="bloco2" class="alerta" titulo="Alunos" :nomes="nomes2"/>
 
     <BlocoUm id="bloco3" />
 

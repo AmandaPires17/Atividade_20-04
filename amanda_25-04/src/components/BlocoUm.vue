@@ -1,3 +1,19 @@
+<script>
+export default {
+  props: {
+    nomes: {
+      type: Array,
+    },
+    titulo: {
+      type: String,
+      default: "Amanda",
+    },
+  },
+  data() {
+    return {};
+  },
+};
+</script>
 <template>
 
   <article class="block">
